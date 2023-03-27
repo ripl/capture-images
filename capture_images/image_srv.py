@@ -22,7 +22,7 @@ class CaptureImages:
         self.arm_rgb_topic = rospy.get_param('~arm_rgb_topic', '/camera_arm/color/image_raw')
         self.arm_rgb_buffer = None
 
-        self.arm_depth_topic = rospy.get_param('~arm_depth_topic', '/camera_arm/depth/image_rect_raw')
+        self.arm_depth_topic = rospy.get_param('~arm_depth_topic', '/camera_arm/aligned_depth_to_color/image_raw')
         self.arm_depth_buffer = None
 
         self.arm_pc_topic = rospy.get_param('~arm_pc', '/camera_arm/depth_registered/points')
