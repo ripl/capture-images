@@ -47,7 +47,7 @@ class CaptureImages:
 
 
         ROS_INFO("hello!! Running the service now...")
-        self._srv = rospy.Service('~capture_image', CaptureImage, self.get_image)
+        self._srv = rospy.Service('capture_image', CaptureImage, self.get_image)
 
     def img_cb(self, cam, frame):
         """ Stores the frame only if `capture` is True.
